@@ -13,10 +13,12 @@ const config: RollupOptions[] = [
         format: "cjs",
         exports: "named",
         strict: false, // Don't emit "use strict" in output
+        sourcemap: true,
       },
       {
         file: `dist/esm/classix.mjs`,
         format: "es",
+        sourcemap: true,
       },
     ],
   },
